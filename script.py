@@ -7,9 +7,16 @@ import pytz
 import requests
 
 # Define functions to send messages via Telegram
-def telegram_bot_sendques(bot_message):
+"""def telegram_bot_sendques(bot_message):
     bot_token = '7716677970:AAHMAtvPRlzr4Iu3Ob0cNF9LVQ1-YhOmrq0'
     bot_chatID = '809899065'
+    send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + \
+                '&parse_mode=MarkdownV2&text=' + str(bot_message).replace('.', '\\.')  # Escape the dot character
+    response = requests.get(send_text)
+    return response.json() """
+def telegram_bot_sendques(bot_message):
+    bot_token = '7999318885:AAGWzUsMFWF6bh3NhoVSnFKjdhkfvQec5Nw'
+    bot_chatID = '1437550690'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + \
                 '&parse_mode=MarkdownV2&text=' + str(bot_message).replace('.', '\\.')  # Escape the dot character
     response = requests.get(send_text)
@@ -24,9 +31,9 @@ def telegram_bot_sendtext(bot_message):
     return response.json()
 
 #variables
-sub = "Ramu"
-username = "nrama1219@gmail.com"
-password = "Nrama@89"
+sub = "Computer account - Himanshu"
+username = "himanshubhardwajsunny@gmail.com"
+password = "p0lin528500@D"
 login_text= f" Logged {sub}"
 limit_texts = f"Limit hit {sub}"
 flag = True
