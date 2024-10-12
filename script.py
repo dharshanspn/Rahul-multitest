@@ -6,17 +6,9 @@ from datetime import datetime, timedelta
 import pytz
 import requests
 
-# Define functions to send messages via Telegram
-"""def telegram_bot_sendques(bot_message):
-    bot_token = '7716677970:AAHMAtvPRlzr4Iu3Ob0cNF9LVQ1-YhOmrq0'
-    bot_chatID = '809899065'
-    send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + \
-                '&parse_mode=MarkdownV2&text=' + str(bot_message).replace('.', '\\.')  # Escape the dot character
-    response = requests.get(send_text)
-    return response.json() """
-def telegram_bot_sendques(bot_message):
-    bot_token = '7999318885:AAGWzUsMFWF6bh3NhoVSnFKjdhkfvQec5Nw'
-    bot_chatID = '1437550690'
+def telegram_bot_sendtext(bot_message):
+    bot_token = '7689900582:AAEqvL6FpyCoALd6iOvwGneRJvbrQlYrWvw'
+    bot_chatID = '6966110728'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + \
                 '&parse_mode=MarkdownV2&text=' + str(bot_message).replace('.', '\\.')  # Escape the dot character
     response = requests.get(send_text)
