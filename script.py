@@ -23,7 +23,7 @@ def telegram_bot_sendtext(bot_message):
     return response.json()
 
 #variables
-sub = "Maths account"
+sub = "Himanshu"
 username = "himanshubhardwajsunny@gmail.com"
 password = "p0lin528500@D"
 login_text= f" Logged {sub}"
