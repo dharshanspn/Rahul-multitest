@@ -16,8 +16,8 @@ def telegram_bot_sendques(bot_message):
     return response.json()
 
 def telegram_bot_sendtext(bot_message):
-    bot_token = '7689900582:AAEqvL6FpyCoALd6iOvwGneRJvbrQlYrWvw'
-    bot_chatID = '6966110728'
+    bot_token = '7999318885:AAGWzUsMFWF6bh3NhoVSnFKjdhkfvQec5Nw'
+    bot_chatID = '1437550690'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + \
                 '&parse_mode=MarkdownV2&text=' + str(bot_message).replace('.', '\\.')  # Escape the dot character
     response = requests.get(send_text)
