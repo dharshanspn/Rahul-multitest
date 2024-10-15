@@ -65,8 +65,7 @@ while flag:
 telegram_bot_sendtext(login_text)
 #remove all
 telegram_bot_sendques(login_text)
-telegram_bot_sendques(f"{alert}")
-telegram_bot_sendtext(f"{alert}")
+
 
 # Navigate to the authoring page
 driver.get("https://expert.chegg.com/qna/authoring/answer")
@@ -130,6 +129,7 @@ while True:
             
         else:
             telegram_bot_sendques(f"{alert}")
+            telegram_bot_sendtext(f"{alert}")
             time.sleep(720)
 
     except Exception as e:
