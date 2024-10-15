@@ -63,8 +63,7 @@ while flag:
         telegram_bot_sendtext(f"Password {sub}")
 
 telegram_bot_sendtext(login_text)
-#remove all
-telegram_bot_sendques(login_text)
+
 
 
 # Navigate to the authoring page
