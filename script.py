@@ -79,19 +79,19 @@ while True:
         limit_text = f"{limit}"
 
         if limit_text != "https://expert.chegg.com/qna/authoring/answer":
-            time.sleep(10)
+            time.sleep(3)
             driver.get("https://expert.chegg.com/qna/authoring/answer")
             time.sleep(3)
             limit = driver.current_url
             limit_text = f"{limit}"
             if limit_text != "https://expert.chegg.com/qna/authoring/answer":
-                time.sleep(10)
+                time.sleep(3)
                 driver.get("https://expert.chegg.com/qna/authoring/answer")
                 time.sleep(3)
                 limit = driver.current_url
                 limit_text = f"{limit}"
                 if limit_text != "https://expert.chegg.com/qna/authoring/answer":
-                    time.sleep(10)
+                    time.sleep(3)
                     driver.get("https://expert.chegg.com/qna/authoring/answer")
                     time.sleep(3)
                     limit = driver.current_url
