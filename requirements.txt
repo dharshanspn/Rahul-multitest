@@ -1,3 +1,4 @@
+notifier_botty
 selenium
 requests
 pytz
